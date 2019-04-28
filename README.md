@@ -20,6 +20,6 @@ Your project must:
 
 * Have folder structure that meets MVC Paradigm;
 
-* Meet good quality coding standards (indentation, scoping, naming).
+* Meet good quality codin g standards (indentation, scoping, naming).
 
 * Must not expose sensitive API key information on the server, see [Protecting-API-Keys-In-Node.md](../../../10-nodejs/03-Supplemental/Protecting-API-Keys-In-Node.md)
