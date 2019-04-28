@@ -1,8 +1,7 @@
 DROP DATABASE IF EXISTS betty_db;
 CREATE DATABASE betty_db;
 
-<<<<<<< HEAD
-USE exampledb;
+USE betty_db;
 
 CREATE TABLE accountInfo (
   id INT NOT NULL AUTO_INCREMENT,
@@ -12,6 +11,8 @@ CREATE TABLE accountInfo (
   PRIMARY KEY (id)
 );
 
+
+
 INSERT INTO accountInfo (coins)
 VALUES (0);
 
@@ -20,7 +21,3 @@ VALUES (0);
 
 -- INSERT INTO products (flavor, price, quantity)
 -- VALUES ("strawberry", 3.25, 75);
-=======
--- DROP DATABASE IF EXISTS testdb;
--- CREATE DATABASE testdb;
->>>>>>> origin/master

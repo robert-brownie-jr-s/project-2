@@ -1,10 +1,5 @@
-<<<<<<< HEAD:models/example.js
-module.exports = function (sequelize, DataTypes) {
-  var Example = sequelize.define("Example", {
-=======
 module.exports = function(sequelize, DataTypes) {
   var Sequelize = sequelize.define("Sequelize", {
->>>>>>> origin/master:models/owl.js
     text: DataTypes.STRING,
     description: DataTypes.TEXT
   });
@@ -12,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
 };
 
 
-var config = require(__dirname + "/../config/config.json")[env];
+var config = require(__dirname + "/../config/config.json")[process.env];
 
 
 
@@ -30,18 +25,19 @@ function makeIdCode(length) {
 var idCode = makeIdCode(20)
 console.log(idCode);
 
+
 //update part begins
 
-let mysql = require('mysql');
-let config = require('../config/config.json');
+// let mysql = require('mysql');
+// let config = require('../config/config.json');
 
-let connection = mysql.createConnection(config);
+// let connection = mysql.createConnection(config);
 
-let sql = `UPDATE idCode
-SET idCode=idCode
-WHERE CustomerID = customerId;`;
+// let sql = `UPDATE idCode
+// SET idCode=idCode
+// WHERE CustomerID = customerId;`;
 
-let data = [false, 1];
+// let data = [false, 1];
 
 
 

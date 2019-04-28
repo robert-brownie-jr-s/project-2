@@ -4,7 +4,7 @@
   "description": "Project 2 Starter",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "lint": "eslint **/*.js --quiet",
     "fix": "eslint --fix .",
     "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
@@ -16,13 +16,8 @@
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "mysql2": "^1.6.4",
-<<<<<<< HEAD
-    "nodemon": "^1.18.11",
-    "sequelize": "^4.41.2"
-=======
     "overwatchleague": "^2.1.0",
     "sequelize": "^5.7.6"
->>>>>>> origin/master
   },
   "devDependencies": {
     "chai": "^4.1.2",
