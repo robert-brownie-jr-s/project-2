@@ -5,7 +5,7 @@ const OWL = new OverwatchLeague();
 
 module.exports = function (app) {
   //overwatch requests
-  app.get("/api/live", function (req, res) {
+  app.get("/owl/live", function (req, res) {
     //get all owl events
     OWL.getLiveMatch(req).then(response => {
       response = response.data
@@ -19,7 +19,7 @@ module.exports = function (app) {
       res.sendStatus(500);
     });
   });
-  
+
   app.get("/api/schedule", function (req, res) {
     //get all owl events
     OWL.getSchedule(req).then(response => {
@@ -32,6 +32,10 @@ module.exports = function (app) {
       res.sendStatus(500);
     });
   });
-  
- 
+
+/*********************************/
+
+//doter routes
+
+
 }
