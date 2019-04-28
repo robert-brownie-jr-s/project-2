@@ -4,23 +4,16 @@
     "password": "root",
     "database": "betty_db",
     "host": "127.0.0.1",
-    "port": 8889,
+    "port": 3306,
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "root",
-<<<<<<< HEAD:app/config/config.json
-    "database": "testdb",
-    "host": "localhost",
-    "dialect": "mysql",
-    "logging": false
-=======
     "database": "betty_db",
     "host": "127.0.0.1",
     "port": 8889,
     "dialect": "mysql"
->>>>>>> origin/master:config/config.json
   },
   "production": {
     "username": "root",
