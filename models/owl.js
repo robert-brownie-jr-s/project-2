@@ -1,9 +1,14 @@
+<<<<<<< HEAD:models/example.js
 module.exports = function (sequelize, DataTypes) {
   var Example = sequelize.define("Example", {
+=======
+module.exports = function(sequelize, DataTypes) {
+  var Sequelize = sequelize.define("Sequelize", {
+>>>>>>> origin/master:models/owl.js
     text: DataTypes.STRING,
     description: DataTypes.TEXT
   });
-  return Example;
+  return Sequelize;
 };
 
 

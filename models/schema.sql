@@ -1,6 +1,7 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+DROP DATABASE IF EXISTS betty_db;
+CREATE DATABASE betty_db;
 
+<<<<<<< HEAD
 USE exampledb;
 
 CREATE TABLE accountInfo (
@@ -19,3 +20,7 @@ VALUES (0);
 
 -- INSERT INTO products (flavor, price, quantity)
 -- VALUES ("strawberry", 3.25, 75);
+=======
+-- DROP DATABASE IF EXISTS testdb;
+-- CREATE DATABASE testdb;
+>>>>>>> origin/master
