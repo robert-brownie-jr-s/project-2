@@ -38,4 +38,8 @@ module.exports = function (app) {
 //doter routes
 
 
-}
+//PandaScore
+// ajax
+// https://api.pandascore.co/some-url?token=YOUR_TOKEN
+
+// }
