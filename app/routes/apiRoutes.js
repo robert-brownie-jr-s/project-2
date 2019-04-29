@@ -7,10 +7,10 @@ module.exports = function (app) {
   //overwatch requests
   app.get("/owl/live", function (req, res) {
     //get all owl events
-    OWL.getLiveMatch(req).then(response => {
-      response = response.data
+    OWL.getPlayers(4523).then(response => {
+      // response = response.data
 
-      console.log(response.data.liveMatch);
+      console.log(response);
       console.log("************************************************************************************************************************************************************************************************")
       //recieving live match updates
       res.json(response.data);
