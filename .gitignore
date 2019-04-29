@@ -89,4 +89,8 @@ lerna-debug.log
 # System Files
 .DS_Store
 Thumbs.db
+<<<<<<< HEAD
 node_modules
+=======
+node_modules
+>>>>>>> 224fffed3e13d29558be0d66d11202c1b93dc93b

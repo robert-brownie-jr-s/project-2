@@ -1,8 +1,11 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+var path = require("path");
+// research on bcrypt <- creating unique code for ids
 
-var db = require("./models");
+
+var db = require("./app/models");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
@@ -16,14 +19,17 @@ app.use(express.static("public"));
 app.engine(
   "handlebars",
   exphbs({
-    defaultLayout: "main"
+    defaultLayout: "main",
+    layoutsDir: path.join(__dirname, '/app/views')
   })
 );
 app.set("view engine", "handlebars");
+// app.set('view engine', path.join(__dirname, '/app/views'));
+
 
 // Routes
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routes/apiRoutes")(app);
+require("./app/routes/htmlRoutes")(app);
 
 var syncOptions = { force: false };
 
