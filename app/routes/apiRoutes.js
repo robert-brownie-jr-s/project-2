@@ -5,9 +5,9 @@ const OWL = new OverwatchLeague();
 
 module.exports = function (app) {
   //overwatch requests
-  app.get("/owl/live", function (req, res) {
+  app.get("/owl/teams", function (req, res) {
     //get all owl events
-    OWL.getPlayers(4523).then(response => {
+    OWL.getTeams().then(response => {
       // response = response.data
 
       console.log(response);
@@ -42,4 +42,4 @@ module.exports = function (app) {
 // ajax
 // https://api.pandascore.co/some-url?token=YOUR_TOKEN
 
-// }
+}
