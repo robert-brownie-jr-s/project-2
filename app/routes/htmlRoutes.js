@@ -4,9 +4,9 @@ module.exports = function(app) {
     app.get("/", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/html/index.html"));
     });
-    app.get("/index", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/html/index.html"));
-    });
+  //  app.get("#about-us", function(req, res) {
+   //    res.sendFile(path.join(__dirname, "../public/html/index.html"));
+ //   });
     app.get("/allbets", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/html/allbets.html"));
     });
