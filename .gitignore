@@ -90,7 +90,3 @@ lerna-debug.log
 .DS_Store
 Thumbs.db
 node_modules
-<<<<<<< HEAD
-node_modules
-=======
->>>>>>> origin
