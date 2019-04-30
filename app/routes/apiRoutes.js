@@ -65,8 +65,8 @@ module.exports = function (app) {
   //gets schedule for OWL
   app.get("/owl/schedule", function (req, res) {
 
-    OWL.getSchedule(req).then(schedule => {
-      schedule = scheq.data
+    OWL.getWeeksMatches().then(schedule => {
+      schedule = schedule.data
 
       // console.log(schedule);
       res.json(schedule)
