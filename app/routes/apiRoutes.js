@@ -35,10 +35,8 @@ module.exports = function (app) {
     OWL.getMaps().then(mapName => {
       // mapName = mapName.data[0].name.en_US
       // mapName = mapName.data[0].type
-      //  mapName = mapName.data[0].icon
-      mapName = mapName.data[0].thumbnail
- 
-
+      // mapName = mapName.data[0].icon
+      // mapName = mapName.data[0].thumbnail
 
       console.log("Here are the maps my dude");
 
