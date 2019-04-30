@@ -5,43 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teams</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="http://code.jquery.com/jquery-3.4.0.min.js"
-  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-  crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="wow.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "freemono", monospace}
+    </style>
+    <body class="w3-light-grey w3-content" style="max-width:1600px">
+    
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://cdn3.iconfinder.com/data/icons/e-sport-outline/64/16_Team_Leader_esport_game_competition-512.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b> Coins Won to date:
+        $154,700
+    </b></h4>
+    <p class="w3-text-black">Your "Go-To" for all things E-Sports!</b></p>
+
+    <a href="https://discord.gg/vQHpc3e" target="_blank" class ="w3-text-red">Join the conversation in our Discord!</a>
+    
+  </div>
+  <div class="w3-bar-block">
+      <a href="#logIn" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Login</a>
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home/News</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-question fa-fw w3-margin-right"></i>About Our Cafe</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw w3-margin-right"></i>Packages</a>
+    <a href="#support" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-wheelchair-alt fa-fw w3-margin-right"></i>Admin Support</a>
+    <a href="#allBets" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-money fa-fw w3-margin-right"></i>All Bets</a>
+    <a href="#cashOut" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw w3-margin-right"></i>Cash Out</a>
+    <a href="#watchNow" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-tv fa-fw w3-margin-right"></i>Watch Now!</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-cc-visa w3-hover-opacity"></i>
+    <i class="fa fa-cc-amex w3-hover-opacity"></i>
+    <i class="fa fa-cc-mastercard w3-hover-opacity"></i>
+    <i class="fa fa-cc-paypal w3-hover-opacity"></i>
+    <i class="fa fa-btc w3-hover-opacity"></i>
+    <i class="fa fa-empire w3-hover-opacity"></i>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+
+ <!-- Footer -->
+ <footer class="w3-container w3-padding-32 w3-black">
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>GAMBLING DISCLAIMER</h3>
+        <p>This site's purpose is to provide a safe gambling enviroment, with digital currency. We use crypto currency, exchanged for our currency, and "cashed out" back into origin currency.
+            Problems Gambling? 1(800) 522-4700
+        </p>
+        <p>Powered by <a href="https://github.com/robert-brownie-jr-s/project-2" target="_blank">The Robert Brownie Jr's</a></p>
+      </div>
+    
+      <div class="w3-third">
+        <h3>BLOG LINKS</h3>
+        <ul class="w3-ul w3-hoverable">
+          <li class="w3-padding-16">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAdVBMVEVkQaT///9lQ6T7+v1jP6RYMZ5SJptfOqF0V6zm4e9aNJ/u6vWdi8Lh2+3p5PJVK5xMIJfGvNzCt9qah8LNw+BUKZxKGpernMvUy+Svoc7DuNrPxuGRfby/sthoR6X49vs/AJK4rNNIFZWDa7SMdrprTaenl8kbADAOAAACkUlEQVR4nO3cbVeiQBiAYU1eEoxBFxC1bKt1//9PXHkV8IAJKu0z9/WtidMZ7gNMGTCZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBkxiBjz/4m7P3TEGNP/xbUejobYuGMvQfDRfPpIAIa2IdhCSQ0UCvtGxiOq30D58/ABAIaqDjfFffwfKXDi4wG9vN70UDZV1JCGqi/xSHtXr0rppQGc+0b2F9T7RtYKxpYcxrQgAYJGtAg0dXA9i3L8tVpwEwHzPKDI/kN7Fd3frQLiwFz4x2/9jZlFfkNnF/p8ItfDKhlOrAtB/RtsKIBDWhAAxrQIEEDGiRoQIMEDWiQoAENEjo2WDQbBOmATp8f2F+71Xa1/TCLAWexPA4sF+WA/AYTWyXM04CTDpw206DBRUL+9z6kgeF4ujcwwvwOFn0bGPmZoHEDIywSTF/te83uMfo2OB0F0415efMfrWcD24nLBNb9ZvcY/RoYkhL0a2CoUwL/8uY/XZ8Glcvh5vOus3uMHg2ql0NfwgMc1Qa+WVGud8oxa1Q1wZhTv5lKg5lX4b7ldxlYW9erK29z34TdP/t/UWlQl996Eb61fF/EipBpbRCkDaL25zuEnAiTSw2iZWuC9aeEy2Gqs0EUtB8FkZgEnQ06EqylXAsS7Q0sq+NEELIiZNob/N7qcRR0NHj7aE8gZkXIWF7rrrYmkLMiZFTc/DXwfKdrW7hrEX8j1DQeVXOeZs0EgePUthh7xndn7JsNYkvGCw6+76xB7OuW4KxBHI09o8drNNgJWwa/pd4gCLU7ESaNBoGpY4Jjg8qJoN2KkDH27/mbXrS8HGaM4j1Be3V5Y6lkvfoJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIb4B+UMNXQLss04AAAAAElFTkSuQmCC" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Twitch</span><br>
+            <span>Twitch Streaming and watch Tornaments</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="data:image/png;base64,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" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">MLG</span><br>
+            <span>MLG updates and MLG Tornament Rules</span>
+          </li> 
+        </ul>
+      </div>
+  
+      <div class="w3-panel w3-large">
+          <i class="fa fa-cc-visa w3-hover-opacity"></i>
+          <i class="fa fa-cc-amex w3-hover-opacity"></i>
+          <i class="fa fa-cc-mastercard w3-hover-opacity"></i>
+          <i class="fa fa-cc-paypal w3-hover-opacity"></i>
+          <i class="fa fa-btc w3-hover-opacity"></i>
+          <i class="fa fa-empire w3-hover-opacity"></i>
         </div>
-      </nav>
+  
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">MLG</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DOTA2</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom">OWL</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">LOL</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom">LCS</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">CS:GO</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom">CSL</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Overwatch</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom">eSports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+        </p>
+      </div>
+  
+    </div>
+    </footer>
+    
+
+
+
 </body>
 </html>
