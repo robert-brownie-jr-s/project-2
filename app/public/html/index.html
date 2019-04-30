@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../styles/esports.css">
+<link rel="stylesheet" href="wow.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "freemono", monospace}
 </style>
@@ -25,12 +25,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "freemono", monospace}
     <p class="w3-text-black">Your "Go-To" for all things E-Sports!</b></p>
   </div>
   <div class="w3-bar-block">
-    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-red"><i class="fa fa-home fa-fw w3-margin-right"></i>Home/News</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-question fa-fw w3-margin-right"></i>About Our Cafe</a> 
+      <a href="#logIn" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-red"><i class="fa fa-user fa-fw w3-margin-right"></i>Login</a>
+    <a href="/" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-red"><i class="fa fa-home fa-fw w3-margin-right"></i>Home/News</a> 
+    <a href="#about-us" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-question fa-fw w3-margin-right"></i>About Our Cafe</a> 
     <a href="#support" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Admin Support</a>
-    <a href="#bets" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-money fa-fw w3-margin-right"></i>Place Bets</a>
-    <a href="#sidebets" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-money fa-fw w3-margin-right"></i>Side Bets</a>
-    <a href="#cashout" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw w3-margin-right"></i>Cash Out</a>
+    <a href="/allBets" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-money fa-fw w3-margin-right"></i>All Bets</a>
+    <a href="#cashOut" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw w3-margin-right"></i>Cash Out</a>
+    <a href="/watchnow" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-tv fa-fw w3-margin-right"></i>Watch Now!</a>
   </div>
   <!-- <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -144,7 +145,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "freemono", monospace}
     </div>
   </div> -->
 
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about-us">
     <h4><b>About E-Sports Cafe</b></h4>
     <p>Welcome to your first and last stop for all things E-Sports. At our E-Sports cafe youre able to follow and track stats, trades, and competitive matches for all your favorite E-Sports teams. Our goal is simple, anonymous, legal, "no-catch" betting on E-Sports Professional matches.
         We have also given you the ability to incur coins via our "PPV" feature(pay-per-view) which gives coins for viewing matches. As well as our refferal value, AND our newest feature, "O.B.S" or Open Betting System, well provide the stats, odds, and ratios, you just place bets!
