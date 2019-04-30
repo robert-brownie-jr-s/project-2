@@ -4,21 +4,38 @@ const OWL = new OverwatchLeague();
 
 
 module.exports = function (app) {
-  app.get("/api/owlteam", function (req, res) {
+  //overwatch requests
+  app.get("/owl/live", function (req, res) {
     //get all owl events
-    OWL.getWeeksMatches(req).then(response => {
-      console.log(response.data);
-      res.json(response)
+    OWL.getLiveMatch(req).then(response => {
+      response = response.data
+
+      console.log(response.data.liveMatch);
+      console.log("************************************************************************************************************************************************************************************************")
+      //recieving live match updates
+      res.json(response.data);
+    }).catch(function (err) {
+      console.log(err.message);
+      res.sendStatus(500);
     });
   });
-  
-  app.get("/api/owlteam", function (req, res) {
+
+  app.get("/api/schedule", function (req, res) {
     //get all owl events
-    OWL.getWeeksMatches(req).then(response => {
+    OWL.getSchedule(req).then(response => {
+      response = response.data
+
       console.log(response.data);
-      res.json(response)
+      res.json(response.data.stages)
+    }).catch(function (err) {
+      console.log(err.message);
+      res.sendStatus(500);
     });
   });
-  
- 
+
+/*********************************/
+
+//doter routes
+
+
 }
