@@ -4,9 +4,9 @@ module.exports = function(app) {
     app.get("/", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/html/index.html"));
     });
-  //  app.get("#about-us", function(req, res) {
-   //    res.sendFile(path.join(__dirname, "../public/html/index.html"));
- //   });
+   app.get("/login", function(req, res) {
+     res.sendFile(path.join(__dirname, "../public/html/login.html"));
+    });
     app.get("/allbets", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/html/allbets.html"));
     });
@@ -31,9 +31,9 @@ module.exports = function(app) {
     app.get("/watchnow", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/html/watchnow.html"));
     });
-    app.get("/login", function(req, res) {
-        res.render("login");
-    });
+  // app.get("/login", function(req, res) {
+  //      res.render("login");
+  //  });
     
 
 };
