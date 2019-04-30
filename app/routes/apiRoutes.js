@@ -2,12 +2,9 @@ var db = require("../models");
 const OverwatchLeague = require('overwatchleague');
 const OWL = new OverwatchLeague();
 
-
 module.exports = function (app) {
-//currency
+ 
 
-
-//end of currency
   //overwatch requests
   /*THINGS NEEDED*/
   /*
@@ -38,8 +35,8 @@ module.exports = function (app) {
     OWL.getMaps().then(mapName => {
       // mapName = mapName.data[0].name.en_US
       // mapName = mapName.data[0].type
-      // mapName = mapName.data[0].icon
-      // mapName = mapName.data[0].thumbnail
+      //  mapName = mapName.data[0].icon
+      mapName = mapName.data[0].thumbnail
  
 
 
