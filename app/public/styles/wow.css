@@ -6,6 +6,40 @@
     font-family: "freemono", monospace;
   }
 
+ .teamLon {
+   background-color: #6df;
+ }
+ .teamHou {
+  background-color:#9d0;
+}
+.teamAtl {
+  background-color: #912;
+}
+.teamNyxl {
+  background-color: #15f;
+  border: 1px;
+  border-color: black;
+}
+.teamSel {
+  background-color: #b90;
+  border: 1px;
+  border-color: black;
+}
+.teamVan {
+  background-color: #127;
+  border: 1px;
+  border-color: black;
+}
+.teamLa {
+  background-color: #044;
+  border: 1px;
+  border-color: black;
+}
+.teamCd {
+  background-color: #fa0;
+  border: 1px;
+  border-color: black;
+}
 
   /* Float four columns side by side */
   .column {

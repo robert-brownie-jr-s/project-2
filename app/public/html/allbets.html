@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="/app/public/styles/wow.css">
+  <link rel="stylesheet" href="../styles/wow.css">
   <style>
     body,
     h1,
@@ -87,28 +87,64 @@
       <div class="movie_box">
         <div class="buttonimg">
           <div class="news_img">
-            <a href="https://gyazo.com/a12a65523e2d134fccd2c61ed884e704"><img class="img-fluid" alt="Responsive image"
-                src="https://i.gyazo.com/a12a65523e2d134fccd2c61ed884e704.png" alt="Upcoming Matches" /></a>
-            <h2 class="h3-w3-box-text-red"><b>Next Match: LA Valiant vs CD Hunters</b></h2>
+            <!-- SPITFIRE VS OUTLAWS -->
+              <a href="https://overwatchleague.com/en-us/match/21347"><img class="img-fluid" alt="Responsive image" src="https://i.gyazo.com/a8a59300dc01f35fe50d86cbb61e48f1.png" alt="LON VS HOU" width="1200"/></a>
+              <!-- REIGN VS EXCELSIOR -->
+              <a href="https://overwatchleague.com/en-us/match/21363"><img class="img-fluid" alt="Responsive image" src="https://i.gyazo.com/b8c707922aa71cf616b80cd77cf9a57d.png" alt="ATL VS NYXL" width="1215"/></a>
+              <!-- SEOUL VS VANCOUVER -->
+                <a href="https://overwatchleague.com/en-us/match/21315"><img class="img-fluid" alt="Responsive image" src="https://i.gyazo.com/51d122fdbe228c32a7304ec36d92cab2.png" alt="SEOUL VS VANCOUVER" width="1270"/></a>
+                <!-- CHENGDU VS LA -->
+                <a href="https://overwatchleague.com/en-us/match/21372"><img class="img-fluid" alt="Responsive image"
+                  src="https://i.gyazo.com/a12a65523e2d134fccd2c61ed884e704.png" alt="CD VS" /></a>
+               
+            <h2 class="h3-w3-box-text-red"><b>CHOOSE A MATCH TO BID ON!</b></h2>
             <br />
+            <!-- main betting form for the db -->
             <form action="/post" method="POST">
               <div class="row">
-                <button class="'w3-bar-item w3-button w3-blue w3-padding team-1" type="button"><i
-                    class="fa fa-battery-full fa-fw w3-margin-right"></i> LA Place Bet</button>
+                <button class=" teamLon btn" type="button"><i
+                    class="fa fa-battery-full fa-fw w3-margin-right"></i> LON Place Bet</button>
 
                 <input type="text" placeholder="enter a bid" name="enter-bid" id="enter-bid">
 
+                <button class="teamHou btn" type="button"><i
+                    class="fa fa-battery-half fa-fw w3-margin-right"></i> HOU Place Bet</button>
 
+                    <p></p>
+                        
+                    <button class="btn teamAtl" type="button"><i
+                      class="fa fa-battery-half fa-fw w3-margin-right"></i> ATL Place Bet</button>
+  
+                  <input type="text" placeholder="enter a bid" name="enter-bid" id="enter-bid">
+  
+                  <button class="btn teamNyxl" type="button"><i
+                      class="fa fa-battery-half fa-fw w3-margin-right"></i> NYXL Place Bet</button>
 
-                <button class="w3-bar-item w3-button w3-orange w3-padding team-2" type="button"><i
-                    class="fa fa-battery-full fa-fw w3-margin-right"></i> CD Place Bet</button>
+                      <br>
+                        
+                      <button class="btn teamSel" type="button"><i
+                        class="fa fa-battery-empty fa-fw w3-margin-right"></i> SEL Place Bet</button>
+    
+                    <input type="text" placeholder="enter a bid" name="enter-bid" id="enter-bid">
+    
+                    <button class="btn teamVan" type="button"><i
+                        class="fa fa-battery-full fa-fw w3-margin-right"></i> VAN Place Bet</button>
+
+                        <br>
+
+                        <button class="'btn teamLa" type="button"><i
+                          class="fa fa-battery-half fa-fw w3-margin-right"></i> LA Place Bet</button>
+      
+                      <input type="text" placeholder="enter a bid" name="enter-bid" id="enter-bid">
+      
+                      <button class="btn teamCd" type="button"><i
+                          class="fa fa-battery-half fa-fw w3-margin-right"></i> CD Place Bet</button>
 
               </div>
             </form>
           </div>
         </div>
       </div>
-      </form>
 
       <div class="w3-container-w3-padding-32 w3-black">
         </br>
@@ -119,6 +155,7 @@
 
 
           <h1 class="w3-row-padding w3-container w3-black">SIDE-BETS</h1>
+          <!-- side bet form to submit to db -->
           <form action="/post" method="POST">
             USERNAME:<br>
             <i class="fa fa-user fa-fw w3-margin-right"></i><input type="text" name="username" placeholder="Username">
@@ -220,9 +257,11 @@
 
   </div>
 </footer>
-<script src="http://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+<script
+  src="http://code.jquery.com/jquery-3.4.0.js"
+  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
   crossorigin="anonymous"></script>
-<script type="text/javascript" src="/app/public/js/bets.js"></script>
+<script type="text/javascript" src="../js/bets.js"></script>
 
 
 
