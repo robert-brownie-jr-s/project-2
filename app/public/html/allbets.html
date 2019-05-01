@@ -12,34 +12,49 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/wow.css">
   <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    body,h1,h2,h3,h4,h5,h6 {
       font-family: "freemono", monospace
     }
   </style>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
+  
 
   <body>
     <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-collapse w3-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-      <div class="w3-container">
-        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
-          title="close menu">
-          <i class="fa fa-remove"></i>
-        </a>
-        <img
-          src="https://cdn3.iconfinder.com/data/icons/e-sport-outline/64/16_Team_Leader_esport_game_competition-512.png"
-          style="width:45%;" class="w3-round"><br><br>
-        <h4><b> Coins Won to date:
-            $154,700
-          </b></h4>
-        <p class="w3-text-black">Your "Go-To" for all things E-Sports!</b></p>
+<nav class="w3-sidebar w3-collapse w3-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://cdn3.iconfinder.com/data/icons/e-sport-outline/64/16_Team_Leader_esport_game_competition-512.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b> Coins Won to date:
+        $194,980
+    </b></h4>
+    <p class="w3-text-black">Your "Go-To" for all things E-Sports!</b></p>
+
+    <a href="https://discord.gg/vQHpc3e" target="_blank" class ="w3-text-red">Join the conversation in our Discord!</a>
+    
+  </div>
+  <div class="w3-bar-block">
+      <a href="#logIn" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Login</a>
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home/News</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-question fa-fw w3-margin-right"></i>About Our Cafe</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw w3-margin-right"></i>Packages</a>
+    <a href="#support" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-wheelchair-alt fa-fw w3-margin-right"></i>Admin Support</a>
+    <a href="#allBets" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-money fa-fw w3-margin-right"></i>All Bets</a>
+    <a href="#cashOut" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw w3-margin-right"></i>Cash Out</a>
+    <a href="#watchNow" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-tv fa-fw w3-margin-right"></i>Watch Now!</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-cc-visa w3-hover-opacity"></i>
+    <i class="fa fa-cc-amex w3-hover-opacity"></i>
+    <i class="fa fa-cc-mastercard w3-hover-opacity"></i>
+    <i class="fa fa-cc-paypal w3-hover-opacity"></i>
+    <i class="fa fa-btc w3-hover-opacity"></i>
+    <i class="fa fa-empire w3-hover-opacity"></i>
+  </div>
+</nav>
 
         <a href="https://discord.gg/vQHpc3e" target="_blank" class="w3-text-red">Join the conversation in our
           Discord!</a>
@@ -102,46 +117,57 @@
             <!-- main betting form for the db -->
             <form action="/post" method="POST">
               <div class="row">
-                <button class=" teamLon btn" type="button" name="london"><i
-                    class="fa fa-battery-full fa-fw w3-margin-right"></i> LON Place Bet</button>
+
+                  <div class="w3-container-w3-padding-32 w3-black">
+
+                <button class=" teamLon btn" type="button"><i
+                    class="fa fa-star fa-fw w3-margin-right"></i> LON Place Bet</button>
+
 
                 <input type="text" placeholder="enter a bid" name="houlon" id="match-one">
 
-                <button class="teamHou btn" type="button" name="houston"><i
-                    class="fa fa-battery-half fa-fw w3-margin-right"></i> HOU Place Bet</button>
+                <button class="teamHou btn" type="button"><i
+                    class="fa fa-star fa-fw w3-margin-right"></i> HOU Place Bet</button>
 
                     <p></p>
                         
-                    <button class="btn teamAtl" type="button" name="atlanta"><i
-                      class="fa fa-battery-half fa-fw w3-margin-right"></i> ATL Place Bet</button>
+                    <button class="btn teamAtl" type="button"><i
+                      class="fa fa-star fa-fw w3-margin-right"></i> ATL Place Bet</button>
+
   
                   <input type="text" placeholder="enter a bid" name="enter-bid" id="match-two">
   
-                  <button class="btn teamNyxl" type="button" name="nyxl"><i
-                      class="fa fa-battery-half fa-fw w3-margin-right"></i> NYXL Place Bet</button>
+                  <button class="btn teamNyxl" type="button"><i
+                      class="fa fa-star fa-fw w3-margin-right"></i> NYXL Place Bet</button>
 
                       <br>
                         
-                      <button class="btn teamSeoul" type="button" name="seoul"><i
-                        class="fa fa-battery-empty fa-fw w3-margin-right"></i> SEL Place Bet</button>
+                      <button class="btn teamSel" type="button"><i
+                        class="fa fa-star fa-fw w3-margin-right"></i> SEL Place Bet</button>
+
+
     
                     <input type="text" placeholder="enter a bid" name="enter-bid" id="match-three">
     
-                    <button class="btn teamVan" type="button" name="vancouver"><i
-                        class="fa fa-battery-full fa-fw w3-margin-right"></i> VAN Place Bet</button>
+
+                    <button class="btn teamVan" type="button"><i
+                        class="fa fa-star fa-fw w3-margin-right"></i> VAN Place Bet</button>
 
                         <br>
 
-                        <button class="'btn teamLA" type="button" name="valiant"><i
-                          class="fa fa-battery-half fa-fw w3-margin-right"></i> LA Place Bet</button>
+                        <button class="'btn teamLa" type="button"><i
+                          class="fa fa-star fa-fw w3-margin-right"></i> LA Place Bet</button>
+
       
                       <input type="text" placeholder="enter a bid" name="enter-bid" id="match-four">
       
-                      <button class="btn teamCD" type="button" name="chengdu"><i
-                          class="fa fa-battery-half fa-fw w3-margin-right"></i> CD Place Bet</button>
+
+                      <button class="btn teamCd" type="button"><i
+                          class="fa fa-star fa-fw w3-margin-right"></i> CD Place Bet</button>
 
               </div>
             </form>
+      
           </div>
         </div>
       </div>
@@ -172,7 +198,7 @@
           </form>
 
 
-          <p>Please note: Side bets must be picked up by another user to become valid, that being said, skys the limit!
+          <p>Please note: Side bets must be picked up by another user to become valid, Admin will accept the bet 4 hour prior to match start, all bets are FINAL!
           </p>
           </br>
 
@@ -193,17 +219,18 @@
 
 </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-black">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>GAMBLING DISCLAIMER</h3>
-      <p>This site's purpose is to provide a safe gambling enviroment, with digital currency. We use crypto currency,
-        exchanged for our currency, and "cashed out" back into origin currency.
-        Problems Gambling? 1(800) 522-4700
-      </p>
-      <p>Powered by <a href="https://github.com/robert-brownie-jr-s/project-2" target="_blank">The Robert Brownie
-          Jr's</a></p>
+ <!-- Footer -->
+ <footer class="w3-container w3-padding-32 w3-black">
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>GAMBLING DISCLAIMER</h3>
+        <p>This site's purpose is to provide a safe gambling enviroment, with digital currency. We use our own currency to fight fradulent transactions, and protect users from loss or theft. Any questions should be directed to our "Admin Support".
+            Problems Gambling? 1(800) 522-4700
+        </p>
+        <p>Powered by <a href="https://github.com/robert-brownie-jr-s/project-2" target="_blank">The Robert Brownie Jr's</a></p>
+      </div>
+    
+  
     </div>
 
     <div class="w3-third">
@@ -226,14 +253,6 @@
       </ul>
     </div>
 
-    <div class="w3-panel w3-large">
-      <i class="fa fa-cc-visa w3-hover-opacity"></i>
-      <i class="fa fa-cc-amex w3-hover-opacity"></i>
-      <i class="fa fa-cc-mastercard w3-hover-opacity"></i>
-      <i class="fa fa-cc-paypal w3-hover-opacity"></i>
-      <i class="fa fa-btc w3-hover-opacity"></i>
-      <i class="fa fa-empire w3-hover-opacity"></i>
-    </div>
 
     <div class="w3-third">
       <h3>POPULAR TAGS</h3>
