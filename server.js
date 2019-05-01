@@ -29,7 +29,7 @@ app.use(express.static("app/public"));
 // Routes
 require("./app/routes/apiRoutes")(app);
 require("./app/routes/htmlRoutes")(app);
-require("./app/routes/bets-api-routes")(app);
+// require("./app/routes/bets-api-routes")(app);
 
 var syncOptions = { force: false };
 

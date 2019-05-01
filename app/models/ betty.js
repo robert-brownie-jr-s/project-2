@@ -1,16 +1,16 @@
-module.exports = function(sequelize, DataTypes) {
-  var Author = sequelize.define("Author", {
-    // Giving the Author model a name of type STRING
+module.exports = function (sequelize, DataTypes) {
+  var Bid = sequelize.define("Bid", {
+    // Giving the Bid model a name of type STRING
     name: DataTypes.STRING
   });
+  // Associating Bid with Posts
+  // When a Bid is deleted, also delete any associated Posts
+  // Bid.associate = function (models) {
 
-  Author.associate = function(models) {
-    // Associating Author with Posts
-    // When an Author is deleted, also delete any associated Posts
-    Author.hasMany(models.Post, {
-      onDelete: "cascade"
-    });
-  };
+  //   Bid.hasMany(models.Post, {
+  //     onDelete: "cascade"
+  //   });
+  // };
 
-  return Author;
+  return Bid;
 };

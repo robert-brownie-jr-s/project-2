@@ -1,14 +1,14 @@
-
-
-
 // Add event listeners to the submit and delete buttons
-
 
 $(document).ready(function () {
     // Getting references to the name input and bid container, as well as the table body
-    var nameInput = $("#bid-name");
+    var matchOneBid = $("#match-one");
+    var matchTwoBid = $("#match-two");
+    var matchThreeBid = $("#match-three");
+    var matchFourBid = $("#match-four");
     var bidList = $("tbody");
     var bidContainer = $(".bid-container");
+
     // Get references to page elements
     var $lonbid = $("teamLon");
     var $houbid = $("teamHou");
@@ -36,20 +36,28 @@ $(document).ready(function () {
     function handleBidSubmit(event) {
         event.preventDefault();
         // Don't do anything if the name fields hasn't been filled out
-        if (!nameInput.val().trim().trim()) {
+        if (!matchOneBid.val().trim()) {
             return;
-        }
+        }else if (!matchTwoBid.val().trim()) {
+            return;
+        } else if (!matchThreeBid.val().trim())
+        {
+            return;
+        } else if (!matchFourBid.val().trim())
+        {
+            return;
+        } 
+        
+
         // Calling the upsertBid function and passing in the value of the name input
         upsertBid({
-            name: nameInput
-                .val()
-                .trim()
+            name: matchOneBid.val().trim()
         });
     }
 
     // A function for creating an bid. Calls getBids upon completion
     function upsertBid(bidData) {
-        $.post("/api/bidss", bidData)
+        $.post("/api/bids", bidData)
             .then(getBids);
     }
 
