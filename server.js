@@ -20,11 +20,11 @@ app.engine(
   "handlebars",
   exphbs({
     defaultLayout: "main",
-    layoutsDir: path.join(__dirname, '/app/views')
+    layoutsDir: path.join(__dirname, '/app/views/layouts')
   })
 );
 app.set("view engine", "handlebars");
-// app.set('view engine', path.join(__dirname, '/app/views'));
+// app.set('view engine', path.join(__dirname, '/app/views/layouts'));
 
 
 // Routes
