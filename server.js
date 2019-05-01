@@ -1,19 +1,29 @@
 require("dotenv").config();
 var express = require("express");
+var session = require("express-session");
 var exphbs = require("express-handlebars");
 var path = require("path");
+// Requiring passport as we've configured it
+var passport = require("./config/passport");
 // research on bcrypt <- creating unique code for ids
 
-
-var db = require("./app/models");
+//port setup and models
+var PORT = process.env.PORT || 3000;
+//old
+// var db = require("./app/models");
+var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 3000;
-
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("app/public"));
+
+//Example's code
+// We need to use sessions to keep track of our user's login status
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Handlebars
 app.engine(
