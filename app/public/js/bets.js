@@ -1,20 +1,18 @@
-// Get references to page elements
-var $teamOne = $("#team-1");
+$(document).ready(function () {
+    const $tOne = $(".team-1");
+    const $tTwo = $(".team-2");
+    var bid = $("#enter-bid").val();
+    var bidArr = [];
 
-// The API object contains methods for each kind of request we'll make
-var API = {
-    saveBet: function (bet) {
-        return $.ajax({
-            headers: {
-                "Content-Type": "application/json"
-            },
-            type: "Get",
-            url: "api/examples",
-            data: JSON.stringify(bet)
-        });
-    }
-};
+    // $(document).on($tOne, "#author-form", handleAuthorFormSubmit);
+    $(".team-1").click(function () {
+        document.location.reload()
+        bidArr.push(bid)
+        console.log(bidArr)
+    })
 
-// Add event listeners to the submit and delete buttons
-$teamOne.on("click", saveBet);
-
+    $tTwo.click(function () {
+        bidArr.push(bid)
+        console.log(bidArr)
+    })
+});

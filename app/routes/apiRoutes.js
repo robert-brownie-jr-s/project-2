@@ -14,6 +14,7 @@ module.exports = function (app) {
   4.player stats
   5.news
    */
+
   //newz
   app.get("/owl/news", function (req, res) {
 
@@ -30,22 +31,22 @@ module.exports = function (app) {
   });
 
   //list of maps/types
-  app.get("/owl/maps", function (req, res) {
+  // app.get("/owl/maps", function (req, res) {
 
-    OWL.getMaps().then(mapName => {
-      // mapName = mapName.data[0].name.en_US
-      // mapName = mapName.data[0].type
-      // mapName = mapName.data[0].icon
-      // mapName = mapName.data[0].thumbnail
+  //   OWL.getMaps().then(mapName => {
+  //     // mapName = mapName.data[0].name.en_US
+  //     // mapName = mapName.data[0].type
+  //     // mapName = mapName.data[0].icon
+  //     // mapName = mapName.data[0].thumbnail
 
-      console.log("Here are the maps my dude");
+  //     console.log("Here are the maps my dude");
 
-      res.json(mapName.data[0].icon);
-    }).catch(function (err) {
-      console.log(err.message);
-      res.sendStatus(500);
-    });
-  });
+  //     res.json(mapName.data[0].icon);
+  //   }).catch(function (err) {
+  //     console.log(err.message);
+  //     res.sendStatus(500);
+  //   });
+  // });
 
   //gets all OWl teams
   app.get("/owl/teams", function (req, res) {
@@ -56,7 +57,7 @@ module.exports = function (app) {
       console.log("team data");
       
       //recieving live match updates
-      res.json(teams);
+      res.json(teams.competitors[0].competitor.name);
     }).catch(function (err) {
       console.log(err.message);
       res.sendStatus(500);
