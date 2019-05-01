@@ -31,9 +31,7 @@ module.exports = function(app) {
     app.get("/watchnow", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/html/watchnow.html"));
     });
-  // app.get("/login", function(req, res) {
-  //      res.render("login");
-  //  });
+  
     
 
 };
