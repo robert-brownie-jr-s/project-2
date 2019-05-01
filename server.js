@@ -6,12 +6,12 @@ var passport = require("./app/config/passport");
 var exphbs = require("express-handlebars");
 var path = require("path");
 
+
 // research on bcrypt <- creating unique code for ids
 
 //port setup and models
 var PORT = process.env.PORT || 3000;
-//old
-// var db = require("./app/models");
+ 
 var db = require("./app/models");
 
 var app = express();
@@ -27,20 +27,21 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Handlebars
-app.engine(
-  "handlebars",
-  exphbs({
-    defaultLayout: "main",
-    layoutsDir: path.join(__dirname, '/app/views/layouts')
-  })
-);
-app.set("view engine", "handlebars");
+// app.engine(
+//   "handlebars",
+//   exphbs({
+//     defaultLayout: "main",
+//     layoutsDir: path.join(__dirname, '/app/views/layouts')
+//   })
+// );
+// app.set("view engine", "handlebars");
 // app.set('view engine', path.join(__dirname, '/app/views/layouts'));
 
 
 // Routes
 require("./app/routes/apiRoutes")(app);
 require("./app/routes/htmlRoutes")(app);
+// require("./app/routes/bets-api-routes")(app);
 
 var syncOptions = { force: false };
 

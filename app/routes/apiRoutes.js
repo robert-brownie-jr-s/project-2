@@ -3,7 +3,7 @@ const OverwatchLeague = require('overwatchleague');
 const OWL = new OverwatchLeague();
 
 module.exports = function (app) {
- 
+
 // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -12,6 +12,7 @@ module.exports = function (app) {
     // So we're sending the user back the route to the members page because the redirect will happen on the front end
     // They won't get this or even be able to access this page if they aren't authed
     res.json("/members");
+
   });
 
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
