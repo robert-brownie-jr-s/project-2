@@ -15,4 +15,12 @@ $(document).ready(function () {
         bidArr.push(bid)
         console.log(bidArr)
     })
+
+    app.post('/stack',function(req,res){
+        var tmp = req.body.stack0;
+        var tmp1 = req.body.stack1;
+   
+        console.log(tmp)  // stackoverflow0
+        console.log(tmp1)  // stackoverflow1
+   });
 });

@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="wow.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/app/public/styles/wow.css">
   <style>
     body,
     h1,
@@ -51,7 +52,7 @@
             class="fa fa-home fa-fw w3-margin-right"></i>Home/News</a>
         <a href="/#about-us" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
             class="fa fa-question fa-fw w3-margin-right"></i>About Our Cafe</a>
-        <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+        <a href="/#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
             class="fa fa-plus-square fa-fw w3-margin-right"></i>Packages</a>
         <a href="/#admin" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
             class="fa fa-wheelchair-alt fa-fw w3-margin-right"></i>Admin Support</a>
@@ -59,7 +60,7 @@
             class="fa fa-money fa-fw w3-margin-right"></i>All Bets</a>
         <a href="#cashOut" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
             class="fa fa-bank fa-fw w3-margin-right"></i>Cash Out</a>
-        <a href="#watchNow" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+        <a href="/watchNow" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
             class="fa fa-tv fa-fw w3-margin-right"></i>Watch Now!</a>
       </div>
       <div class="w3-panel w3-large">
@@ -86,39 +87,28 @@
       <div class="movie_box">
         <div class="buttonimg">
           <div class="news_img">
-            <img src="https://i.axs.com/2018/12/62794-1-optimized_5c0b0f9b46214.jpg" />
-            <h2 class="h3-w3-box-text-red"><b>Next Match: GZ Charge vs CD Hunters</b></h2>
+            <a href="https://gyazo.com/a12a65523e2d134fccd2c61ed884e704"><img class="img-fluid" alt="Responsive image"
+                src="https://i.gyazo.com/a12a65523e2d134fccd2c61ed884e704.png" alt="Upcoming Matches" /></a>
+            <h2 class="h3-w3-box-text-red"><b>Next Match: LA Valiant vs CD Hunters</b></h2>
             <br />
+            <form action="/post" method="POST">
+              <div class="row">
+                <button class="'w3-bar-item w3-button w3-blue w3-padding team-1" type="button"><i
+                    class="fa fa-battery-full fa-fw w3-margin-right"></i> LA Place Bet</button>
 
-            <button class="'w3-bar-item w3-button w3-blue w3-padding team-1" type="button"><i
-                class="fa fa-battery-full fa-fw w3-margin-right"></i>'GZ'Place Bet</button>
+                <input type="text" placeholder="enter a bid" name="enter-bid" id="enter-bid">
 
-              <input type="text" placeholder="enter a bid" id="enter-bid">            
 
-            <button class="w3-bar-item w3-button w3-orange w3-padding team-2" type="button"><i
-                class="fa fa-battery-full fa-fw w3-margin-right"></i>'CD'Place Bet</button>
+
+                <button class="w3-bar-item w3-button w3-orange w3-padding team-2" type="button"><i
+                    class="fa fa-battery-full fa-fw w3-margin-right"></i> CD Place Bet</button>
+
+              </div>
+            </form>
           </div>
         </div>
       </div>
-
-      <!-- <div class="movie_box">
-        <div class="buttonimg">
-            <div class="news_img">
-                <button class="'w3-bar-item w3-button w3-blue w3-padding team-1-5thowy" type="button"><i class="fa fa-battery-three-quarters  fa-fw w3-margin-right" value="5000"></i>'GZ'Place Bet:5,000</button>    
-                <button class="w3-bar-item w3-button w3-orange w3-padding team-2-5thowy" type="button"><i class="fa fa-battery-three-quarters  fa-fw w3-margin-right" value="5000"></i>'CD'Place Bet:5,000</button> 
-            </div>
-        </div>
-    </div> -->
-
-      <!-- <div class="movie_box">
-        <div class="buttonimg">
-            <div class="news_img">  
-                <button class="'w3-bar-item w3-button w3-blue w3-paddingn team-1-thowy" type="button"><i class="fa fa-battery-quarter fa-fw w3-margin-right" value="1000"></i>'GZ'Place Bet:1,000</button>    
-                <button class="w3-bar-item w3-button w3-orange w3-padding team-2-thowy" type="button"><i class="fa fa-battery-quarter fa-fw w3-margin-right"value="1000"></i>'CD'Place Bet:1,000</button> 
-            </div>
-        </div>
-    </div> -->
-
+      </form>
 
       <div class="w3-container-w3-padding-32 w3-black">
         </br>
@@ -129,17 +119,17 @@
 
 
           <h1 class="w3-row-padding w3-container w3-black">SIDE-BETS</h1>
-          <form action="/action_page.php">
+          <form action="/post" method="POST">
             USERNAME:<br>
-            <i class="fa fa-user fa-fw w3-margin-right"></i><input type="text" name="username" value="User-Name">
+            <i class="fa fa-user fa-fw w3-margin-right"></i><input type="text" name="username" placeholder="Username">
             <br><br>
             Side-Bet:<br>
             <i class="fa fa-question fa-fw w3-margin-right"></i><input type="text" name="sideBet"
-              value="'firstblood:'_' ">
+              placeholder="firstblood:team">
             <br><br>
             Amount:<br>
             <i class="fa fa-money fa-fw w3-margin-right"></i><input type="text" name="amountBet"
-              value="'cannot exceed bank'">
+              placeholder="cannot exceed bank">
             <br><br>
             <input class="w3-button-w3-bold w3-gold" type="submit" value="GOODLUCK!">
           </form>
@@ -153,8 +143,10 @@
 
           </br>
           </br>
-          </br>
-          </br>
+          
+
+          <hr>
+        
 
 
           <!-- If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php" -->
