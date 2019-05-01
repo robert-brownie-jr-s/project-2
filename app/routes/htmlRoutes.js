@@ -34,6 +34,9 @@ module.exports = function(app) {
     app.get("/owl/vods", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/html/owl-vods.html"));
     });
+    app.get("/owl/matches", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/html/upcoming.html"));
+    });
     
   
     

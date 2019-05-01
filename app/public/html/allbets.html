@@ -87,28 +87,58 @@
       <div class="movie_box">
         <div class="buttonimg">
           <div class="news_img">
-            <a href="https://gyazo.com/a12a65523e2d134fccd2c61ed884e704"><img class="img-fluid" alt="Responsive image"
-                src="https://i.gyazo.com/a12a65523e2d134fccd2c61ed884e704.png" alt="Upcoming Matches" /></a>
-            <h2 class="h3-w3-box-text-red"><b>Next Match: LA Valiant vs CD Hunters</b></h2>
+            <!-- SPITFIRE VS OUTLAWS -->
+              <a href="https://overwatchleague.com/en-us/match/21347"><img src="https://i.gyazo.com/a8a59300dc01f35fe50d86cbb61e48f1.png" alt="Image from Gyazo" width="1200"/></a>
+              <!-- REIGN VS EXCELSIOR -->
+              <a href="https://overwatchleague.com/en-us/match/21363"><img src="https://i.gyazo.com/b8c707922aa71cf616b80cd77cf9a57d.png" alt="Image from Gyazo" width="1215"/></a>
+              <!-- SEOUL VS VANCOUVER -->
+                <a href="https://overwatchleague.com/en-us/match/21315"><img src="https://i.gyazo.com/51d122fdbe228c32a7304ec36d92cab2.png" alt="SEOUL VS VANCOUVER" width="1270"/></a>
+                <!-- CHENGDU VS LA -->
+                <a href="https://overwatchleague.com/en-us/match/21372"><img class="img-fluid" alt="Responsive image"
+                  src="https://i.gyazo.com/a12a65523e2d134fccd2c61ed884e704.png" alt="Upcoming Matches" /></a>
+               
+            <h2 class="h3-w3-box-text-red"><b>CHOOSE A MATCH TO BID ON!</b></h2>
             <br />
+            <!-- main betting form for the db -->
             <form action="/post" method="POST">
               <div class="row">
                 <button class="'w3-bar-item w3-button w3-blue w3-padding team-1" type="button"><i
-                    class="fa fa-battery-full fa-fw w3-margin-right"></i> LA Place Bet</button>
+                    class="fa fa-battery-full fa-fw w3-margin-right"></i> LON Place Bet</button>
 
                 <input type="text" placeholder="enter a bid" name="enter-bid" id="enter-bid">
 
-
-
                 <button class="w3-bar-item w3-button w3-orange w3-padding team-2" type="button"><i
-                    class="fa fa-battery-full fa-fw w3-margin-right"></i> CD Place Bet</button>
+                    class="fa fa-battery-full fa-fw w3-margin-right"></i> HOU Place Bet</button>
+
+                    <button class="'w3-bar-item w3-button w3-blue w3-padding team-1" type="button"><i
+                      class="fa fa-battery-full fa-fw w3-margin-right"></i> ATL Place Bet</button>
+  
+                  <input type="text" placeholder="enter a bid" name="enter-bid" id="enter-bid">
+  
+                  <button class="w3-bar-item w3-button w3-orange w3-padding team-2" type="button"><i
+                      class="fa fa-battery-full fa-fw w3-margin-right"></i> NYXL Place Bet</button>
+
+                      <button class="'w3-bar-item w3-button w3-blue w3-padding team-1" type="button"><i
+                        class="fa fa-battery-full fa-fw w3-margin-right"></i> SEL Place Bet</button>
+    
+                    <input type="text" placeholder="enter a bid" name="enter-bid" id="enter-bid">
+    
+                    <button class="w3-bar-item w3-button w3-orange w3-padding team-2" type="button"><i
+                        class="fa fa-battery-full fa-fw w3-margin-right"></i> VAN Place Bet</button>
+
+                        <button class="'w3-bar-item w3-button w3-blue w3-padding team-1" type="button"><i
+                          class="fa fa-battery-full fa-fw w3-margin-right"></i> LA Place Bet</button>
+      
+                      <input type="text" placeholder="enter a bid" name="enter-bid" id="enter-bid">
+      
+                      <button class="w3-bar-item w3-button w3-orange w3-padding team-2" type="button"><i
+                          class="fa fa-battery-full fa-fw w3-margin-right"></i> CD Place Bet</button>
 
               </div>
             </form>
           </div>
         </div>
       </div>
-      </form>
 
       <div class="w3-container-w3-padding-32 w3-black">
         </br>
@@ -119,6 +149,7 @@
 
 
           <h1 class="w3-row-padding w3-container w3-black">SIDE-BETS</h1>
+          <!-- side bet form to submit to db -->
           <form action="/post" method="POST">
             USERNAME:<br>
             <i class="fa fa-user fa-fw w3-margin-right"></i><input type="text" name="username" placeholder="Username">
