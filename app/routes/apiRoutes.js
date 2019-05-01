@@ -49,7 +49,7 @@ module.exports = function (app) {
   // });
 
   //gets all OWl teams
-  app.get("/owl/teams", function (req, res) {
+  app.get("/nothing", function (req, res) {
 
     OWL.getTeams().then(teams => {
       teams = teams.data
