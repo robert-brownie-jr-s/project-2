@@ -1,17 +1,18 @@
 require("dotenv").config();
 var express = require("express");
 var session = require("express-session");
+// Requiring passport as we've configured it
+var passport = require("./app/config/passport");
 var exphbs = require("express-handlebars");
 var path = require("path");
-// Requiring passport as we've configured it
-var passport = require("./config/passport");
+
 // research on bcrypt <- creating unique code for ids
 
 //port setup and models
 var PORT = process.env.PORT || 3000;
 //old
 // var db = require("./app/models");
-var db = require("./models");
+var db = require("./app/models");
 
 var app = express();
 // Middleware
