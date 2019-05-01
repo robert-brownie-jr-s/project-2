@@ -1,5 +1,11 @@
-.* {
+ *{
     box-sizing: border-box;
+  }
+  #nextmatch {
+    text-align: center;
+  }
+  #side-bets {
+    text-align: center;
   }
   
   /* Float four columns side by side */
