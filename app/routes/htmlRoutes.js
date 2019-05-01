@@ -31,6 +31,10 @@ module.exports = function(app) {
     app.get("/watchnow", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/html/watchnow.html"));
     });
+    app.get("/owl/vods", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/html/owl-vods.html"));
+    });
+    
   
     
 
