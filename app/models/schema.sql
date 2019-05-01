@@ -16,8 +16,3 @@ CREATE TABLE accountInfo (
 INSERT INTO accountInfo (coins)
 VALUES (0);
 
--- INSERT INTO products (flavor, price, quantity)
--- VALUES ("chocolate", 3.10, 120);
-
--- INSERT INTO products (flavor, price, quantity)
--- VALUES ("strawberry", 3.25, 75);

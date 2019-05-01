@@ -13,18 +13,18 @@ var PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("app/public"));
 
 // Handlebars
 app.engine(
   "handlebars",
   exphbs({
     defaultLayout: "main",
-    layoutsDir: path.join(__dirname, '/app/views')
+    layoutsDir: path.join(__dirname, '/app/views/layouts')
   })
 );
 app.set("view engine", "handlebars");
-// app.set('view engine', path.join(__dirname, '/app/views'));
+// app.set('view engine', path.join(__dirname, '/app/views/layouts'));
 
 
 // Routes
