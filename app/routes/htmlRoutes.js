@@ -53,11 +53,15 @@ module.exports = function (app) {
     app.get("/owl/matches", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/html/upcoming.html"));
     });
+    app.get("/showbets", function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/html/showbets.html"));
+    });
     // Here we've add our isAuthenticated middleware to this route.
     // If a user who is not logged in tries to access this route they will be redirected to the signup page
     app.get("/members", isAuthenticated, function (req, res) {
         res.sendFile(path.join(__dirname, "../public/members.html"));
     });
+   
     
 };
 
