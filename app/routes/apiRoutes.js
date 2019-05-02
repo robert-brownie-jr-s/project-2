@@ -1,6 +1,4 @@
 var db = require("../models");
-const OverwatchLeague = require('overwatchleague');
-const OWL = new OverwatchLeague();
 const passport = require('passport')
 
 module.exports = function (app) {
@@ -14,9 +12,7 @@ module.exports = function (app) {
     // They won't get this or even be able to access this page if they aren't authed
     console.log("Hello World")
     res.json("/members");
-
   });
-
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
@@ -55,16 +51,5 @@ module.exports = function (app) {
       });
     }
   });
-
-  /*********************************/
-
-  //dota routes
-
-
-  //PandaScore
-  // ajax
-  // https://api.pandascore.co/some-url?token=YOUR_TOKEN
-
-
 
 }
