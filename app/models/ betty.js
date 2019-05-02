@@ -5,7 +5,7 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
-    betType: {
+    team: {
       type: DataTypes.STRING,
       allowNull: false    
   }, 

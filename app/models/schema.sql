@@ -14,8 +14,8 @@ CREATE TABLE accountInfo (
 CREATE TABLE Bid (
   id INT NOT NULL AUTO_INCREMENT,
   username VARCHAR (30) NOT NULL,
-  betType INT (20) NOT NULL,
-  coinDeposit INT (20) NOT NULL,
+  team INT (20) NOT NULL,
+  betAmount INT (20) NOT NULL,
   PRIMARY KEY (id)
 );
 
