@@ -108,3 +108,13 @@
       width:auto;
       height:auto;
   }
+
+  .modal {
+    color: black;
+  }
+  
+  .bid-container {
+    margin: 0 auto; /* Added */
+        float: right; /* Added */
+        margin-bottom: 10px; /* Added */
+  }
