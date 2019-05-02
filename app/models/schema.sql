@@ -5,14 +5,18 @@ USE betty_db;
 
 CREATE TABLE accountInfo (
   id INT NOT NULL AUTO_INCREMENT,
-  idCode VARCHAR(20) NOT NULL,
-  coins INT NOT NULL,
+  idCode VARCHAR (20) NOT NULL,
+  coins INT (20) NOT NULL,
   balance DECIMAL(10,2) NOT NULL,
   PRIMARY KEY (id)
 );
 
+CREATE TABLE Bid (
+  id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR (30) NOT NULL,
+  betType INT (20) NOT NULL,
+  coinDeposit INT (20) NOT NULL,
+  PRIMARY KEY (id)
+);
 
-
-INSERT INTO accountInfo (coins)
-VALUES (0);
 

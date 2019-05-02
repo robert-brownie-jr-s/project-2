@@ -1,16 +1,16 @@
 module.exports = function (sequelize, DataTypes) {
-  var Bid = sequelize.define("Bid", {
-    // Giving the Bid model a name of type STRING
-    name: DataTypes.STRING
+  const Bid = sequelize.define('user', {
+    // attributes
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    betType: {
+      type: DataTypes.STRING,
+      allowNull: false    }
+  }, {
+    // options
   });
-  // Associating Bid with Posts
-  // When a Bid is deleted, also delete any associated Posts
-  // Bid.associate = function (models) {
-
-  //   Bid.hasMany(models.Post, {
-  //     onDelete: "cascade"
-  //   });
-  // };
 
   return Bid;
 };
