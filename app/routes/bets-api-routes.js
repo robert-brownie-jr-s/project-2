@@ -9,4 +9,16 @@ module.exports = function (bets) {
             res.json(dbBid);
         });
     });
+
+    app.post("/api/showbets", function (req,res) {
+        db.Bid.create({
+            username: req.body.username,
+            betType: req.body.betType,
+            betAmount: req.body.betAmount
+        }).then(function(dbBid) {
+            res.json(dbBid)
+        }).catch(function(err) {
+            res.json(err);
+        })
+    })
 }
