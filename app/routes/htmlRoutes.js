@@ -53,7 +53,7 @@ module.exports = function (app) {
     app.get("/owl/matches", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/html/upcoming.html"));
     });
-    app.get("/api/bids", function (req, res) {
+    app.get("/api/showbets", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/html/showbets.html"));
     });
     // Here we've add our isAuthenticated middleware to this route.

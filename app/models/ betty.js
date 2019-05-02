@@ -7,9 +7,12 @@ module.exports = function (sequelize, DataTypes) {
     },
     betType: {
       type: DataTypes.STRING,
-      allowNull: false    }
-  }, {
-    // options
+      allowNull: false    
+  }, 
+    betAmount: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   });
 
   return Bid;
